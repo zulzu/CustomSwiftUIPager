@@ -13,7 +13,14 @@ struct ContentView: View {
     // # Body
     var body: some View {
         
-        PagerMainView()
+        ZStack {
+            
+            Color.gray
+                .ignoresSafeArea(edges: .all)
+            
+            PagerMainView()
+                .frame(width: 300, height: 300, alignment: .center)
+        }
     }
     
     //=======================================

@@ -21,6 +21,9 @@ struct PagerMainView: View {
         
         ZStack {
             
+            Color.white
+                .cornerRadius(25)
+            
             PagerView(pageCount: pageCount, currentIndex: self.$currentPage) {
                 PagerView1()
                 PagerView2()
