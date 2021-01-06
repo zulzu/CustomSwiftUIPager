@@ -18,8 +18,7 @@ struct ContentView: View {
             Color.gray
                 .ignoresSafeArea(edges: .all)
             
-            PagerMainView()
-                .frame(width: 300, height: 300, alignment: .center)
+            PagerMainView(size: CGSize(width: 320, height: 400))
         }
     }
     
