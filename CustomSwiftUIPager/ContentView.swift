@@ -9,6 +9,7 @@ struct ContentView: View {
     // # Public/Internal/Open
     
     // # Private/Fileprivate
+    private let size: CGSize = CGSize(width: 320, height: 400)
     
     // # Body
     var body: some View {
@@ -18,7 +19,7 @@ struct ContentView: View {
             Color.gray
                 .ignoresSafeArea(edges: .all)
             
-            PagerMainView(size: CGSize(width: 320, height: 400))
+            PagerMainView(size: size, cornerRadius: 20)
         }
     }
     
