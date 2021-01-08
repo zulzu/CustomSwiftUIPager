@@ -11,22 +11,25 @@ struct PagerMainView: View {
     let size: CGSize
     // The corner radius of the view
     let cornerRadius: CGFloat
+    // The size of the page indicator dots
+    let pageIndicatorSize: CGFloat
+    // An array of AnyViews so show as content
     let pagerContent: Array<AnyView>
+    // The background colour of the view
+    let bgColour: Color?
     
     // # Private/Fileprivate
     // The number of the pages
     private let pageCount: Int = 3
     // The current page of the PagerView
     @State private var currentPage = 0
-    // The size of the page indicator dots
-    private let circleSize: CGFloat = 8
     
     // # Body
     var body: some View {
         
         ZStack {
             
-            Color.white
+            bgColour
             
             PagerContentView(pageCount: pagerContent.count, size: size, currentIndex: $currentPage) {
                 ForEach(0..<pagerContent.count) { idx in
@@ -42,7 +45,7 @@ struct PagerMainView: View {
                     
                     ForEach(0..<pageCount) { idx in
                         Circle()
-                            .frame(width: circleSize, height: circleSize)
+                            .frame(width: pageIndicatorSize, height: pageIndicatorSize)
                             .foregroundColor(Color.gray)
                             .opacity(self.currentPage == idx ? 1 : 0.35)
                     }
@@ -58,13 +61,18 @@ struct PagerMainView: View {
     //=======================================
     // MARK: Public Methods
     //=======================================
-    /// Creates a `PagerMainView`.
+    /// Creates a custom pager view
     /// - Parameters:
     ///   - size: The width and the height of the pager view
     ///   - cornerRadius: The corner radius of the view
-    public init(size: CGSize, cornerRadius: CGFloat, pagerContent: Array<AnyView>) {
+    ///   - pageIndicatorSize: The size of the page indicator dots
+    ///   - pagerContent: An array of AnyViews so show as content
+    ///   - bgColour: An optional background colour for the view, default colour: white
+    public init(size: CGSize, cornerRadius: CGFloat, pageIndicatorSize: CGFloat, pagerContent: Array<AnyView>, bgColour: Color? = .white) {
         self.size = size
         self.cornerRadius = cornerRadius
+        self.pageIndicatorSize = pageIndicatorSize
         self.pagerContent = pagerContent
+        self.bgColour = bgColour
     }
 }

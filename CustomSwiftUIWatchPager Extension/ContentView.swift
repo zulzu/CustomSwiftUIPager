@@ -9,18 +9,14 @@ struct ContentView: View {
     // # Public/Internal/Open
     
     // # Private/Fileprivate
-    private let size: CGSize = CGSize(width: UIScreen.main.bounds.width - 40, height: 400)
+    private let size: CGSize = CGSize(width: WKInterfaceDevice.current().screenBounds.width, height: WKInterfaceDevice.current().screenBounds.height)
     
     // # Body
     var body: some View {
         
         ZStack {
-            
-            Color.gray
-                .opacity(0.4)
-                .ignoresSafeArea(edges: .all)
-            
-            PagerMainView(size: size, cornerRadius: 20, pageIndicatorSize: 8, pagerContent: addViewsToPager())
+
+            PagerMainView(size: size, cornerRadius: 0, pageIndicatorSize: 6, pagerContent: addViewsToPager(), bgColour: .clear)
         }
     }
     
@@ -33,19 +29,19 @@ struct ContentView: View {
     //=======================================
     private func addViewsToPager() -> [AnyView] {
         
-        let view1 = PagerView1()
+        let view1 = WatchPagerView1()
             .modifier(ViewToPagerView(size: size))
             .eraseToAnyView()
 
-        let view2 = PagerView2()
+        let view2 = WatchPagerView2()
             .modifier(ViewToPagerView(size: size))
             .eraseToAnyView()
         
-        let view3 = PagerView3()
+        let view3 = WatchPagerView3()
             .modifier(ViewToPagerView(size: size))
             .eraseToAnyView()
         
-        let pageArray = [view1, view2, view3] 
+        let pageArray = [view1, view2, view3]
         
         return pageArray
     }

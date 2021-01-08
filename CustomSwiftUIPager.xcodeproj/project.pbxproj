@@ -18,7 +18,66 @@
 		C91EEE8925A62A7E00D8A13E /* PagerView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE8825A62A7E00D8A13E /* PagerView3.swift */; };
 		C91EEE9525A8A9B600D8A13E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE9425A8A9B600D8A13E /* Extensions.swift */; };
 		C91EEE9925A8AB9C00D8A13E /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE9825A8AB9C00D8A13E /* Modifiers.swift */; };
+		C91EEEA025A8CE6700D8A13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91EEE9F25A8CE6700D8A13E /* Assets.xcassets */; };
+		C91EEEA725A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C91EEEA625A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C91EEEAC25A8CE6700D8A13E /* CustomSwiftUIPagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEEAB25A8CE6700D8A13E /* CustomSwiftUIPagerApp.swift */; };
+		C91EEEAE25A8CE6700D8A13E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEEAD25A8CE6700D8A13E /* ContentView.swift */; };
+		C91EEEB025A8CE6700D8A13E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEEAF25A8CE6700D8A13E /* NotificationController.swift */; };
+		C91EEEB225A8CE6700D8A13E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEEB125A8CE6700D8A13E /* NotificationView.swift */; };
+		C91EEEB425A8CE6700D8A13E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEEB325A8CE6700D8A13E /* ComplicationController.swift */; };
+		C91EEEB625A8CE6800D8A13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91EEEB525A8CE6800D8A13E /* Assets.xcassets */; };
+		C91EEEB925A8CE6800D8A13E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91EEEB825A8CE6800D8A13E /* Preview Assets.xcassets */; };
+		C91EEEBE25A8CE6800D8A13E /* CustomSwiftUIWatchPager.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C91EEE9D25A8CE6400D8A13E /* CustomSwiftUIWatchPager.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C91EEECA25A8CECF00D8A13E /* PagerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE7E25A62A4600D8A13E /* PagerMainView.swift */; };
+		C91EEED025A8CF1D00D8A13E /* WatchPagerView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEECF25A8CF1D00D8A13E /* WatchPagerView1.swift */; };
+		C91EEED725A8CF4800D8A13E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE9425A8A9B600D8A13E /* Extensions.swift */; };
+		C91EEEDB25A8CF4B00D8A13E /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE9825A8AB9C00D8A13E /* Modifiers.swift */; };
+		C91EEEE025A8CFA900D8A13E /* WatchPagerView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEEDF25A8CFA900D8A13E /* WatchPagerView2.swift */; };
+		C91EEEE525A8CFB400D8A13E /* WatchPagerView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEEE425A8CFB400D8A13E /* WatchPagerView3.swift */; };
+		C91EEEE925A8D0F000D8A13E /* PagerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE7925A629F900D8A13E /* PagerContentView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C91EEEA825A8CE6700D8A13E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C91EEE5D25A6294800D8A13E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C91EEEA525A8CE6700D8A13E;
+			remoteInfo = "CustomSwiftUIWatchPager Extension";
+		};
+		C91EEEBC25A8CE6800D8A13E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C91EEE5D25A6294800D8A13E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C91EEE9C25A8CE6400D8A13E;
+			remoteInfo = CustomSwiftUIWatchPager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C91EEEC225A8CE6800D8A13E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C91EEEA725A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91EEEC625A8CE6800D8A13E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C91EEEBE25A8CE6800D8A13E /* CustomSwiftUIWatchPager.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C91EEE6525A6294900D8A13E /* CustomSwiftUIPager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSwiftUIPager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +93,33 @@
 		C91EEE8825A62A7E00D8A13E /* PagerView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView3.swift; sourceTree = "<group>"; };
 		C91EEE9425A8A9B600D8A13E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C91EEE9825A8AB9C00D8A13E /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		C91EEE9D25A8CE6400D8A13E /* CustomSwiftUIWatchPager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSwiftUIWatchPager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91EEE9F25A8CE6700D8A13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C91EEEA125A8CE6700D8A13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91EEEA625A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CustomSwiftUIWatchPager Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91EEEAB25A8CE6700D8A13E /* CustomSwiftUIPagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwiftUIPagerApp.swift; sourceTree = "<group>"; };
+		C91EEEAD25A8CE6700D8A13E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C91EEEAF25A8CE6700D8A13E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C91EEEB125A8CE6700D8A13E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C91EEEB325A8CE6700D8A13E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C91EEEB525A8CE6800D8A13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C91EEEB825A8CE6800D8A13E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C91EEEBA25A8CE6800D8A13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91EEEBB25A8CE6800D8A13E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C91EEECF25A8CF1D00D8A13E /* WatchPagerView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchPagerView1.swift; sourceTree = "<group>"; };
+		C91EEEDF25A8CFA900D8A13E /* WatchPagerView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchPagerView2.swift; sourceTree = "<group>"; };
+		C91EEEE425A8CFB400D8A13E /* WatchPagerView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchPagerView3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C91EEE6225A6294800D8A13E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91EEEA325A8CE6700D8A13E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				C91EEE6725A6294900D8A13E /* CustomSwiftUIPager */,
+				C91EEE9E25A8CE6400D8A13E /* CustomSwiftUIWatchPager */,
+				C91EEEAA25A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension */,
 				C91EEE6625A6294900D8A13E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				C91EEE6525A6294900D8A13E /* CustomSwiftUIPager.app */,
+				C91EEE9D25A8CE6400D8A13E /* CustomSwiftUIWatchPager.app */,
+				C91EEEA625A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +200,50 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C91EEE9E25A8CE6400D8A13E /* CustomSwiftUIWatchPager */ = {
+			isa = PBXGroup;
+			children = (
+				C91EEE9F25A8CE6700D8A13E /* Assets.xcassets */,
+				C91EEEA125A8CE6700D8A13E /* Info.plist */,
+			);
+			path = CustomSwiftUIWatchPager;
+			sourceTree = "<group>";
+		};
+		C91EEEAA25A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C91EEEAB25A8CE6700D8A13E /* CustomSwiftUIPagerApp.swift */,
+				C91EEEAD25A8CE6700D8A13E /* ContentView.swift */,
+				C91EEEAF25A8CE6700D8A13E /* NotificationController.swift */,
+				C91EEEB125A8CE6700D8A13E /* NotificationView.swift */,
+				C91EEEB325A8CE6700D8A13E /* ComplicationController.swift */,
+				C91EEECE25A8CEEC00D8A13E /* Screens */,
+				C91EEEB525A8CE6800D8A13E /* Assets.xcassets */,
+				C91EEEBA25A8CE6800D8A13E /* Info.plist */,
+				C91EEEBB25A8CE6800D8A13E /* PushNotificationPayload.apns */,
+				C91EEEB725A8CE6800D8A13E /* Preview Content */,
+			);
+			path = "CustomSwiftUIWatchPager Extension";
+			sourceTree = "<group>";
+		};
+		C91EEEB725A8CE6800D8A13E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C91EEEB825A8CE6800D8A13E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C91EEECE25A8CEEC00D8A13E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C91EEECF25A8CF1D00D8A13E /* WatchPagerView1.swift */,
+				C91EEEDF25A8CFA900D8A13E /* WatchPagerView2.swift */,
+				C91EEEE425A8CFB400D8A13E /* WatchPagerView3.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,15 +254,51 @@
 				C91EEE6125A6294800D8A13E /* Sources */,
 				C91EEE6225A6294800D8A13E /* Frameworks */,
 				C91EEE6325A6294800D8A13E /* Resources */,
+				C91EEEC625A8CE6800D8A13E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C91EEEBD25A8CE6800D8A13E /* PBXTargetDependency */,
 			);
 			name = CustomSwiftUIPager;
 			productName = CustomSwiftUIPager;
 			productReference = C91EEE6525A6294900D8A13E /* CustomSwiftUIPager.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C91EEE9C25A8CE6400D8A13E /* CustomSwiftUIWatchPager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91EEEC325A8CE6800D8A13E /* Build configuration list for PBXNativeTarget "CustomSwiftUIWatchPager" */;
+			buildPhases = (
+				C91EEE9B25A8CE6400D8A13E /* Resources */,
+				C91EEEC225A8CE6800D8A13E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C91EEEA925A8CE6700D8A13E /* PBXTargetDependency */,
+			);
+			name = CustomSwiftUIWatchPager;
+			productName = CustomSwiftUIWatchPager;
+			productReference = C91EEE9D25A8CE6400D8A13E /* CustomSwiftUIWatchPager.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C91EEEA525A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91EEEBF25A8CE6800D8A13E /* Build configuration list for PBXNativeTarget "CustomSwiftUIWatchPager Extension" */;
+			buildPhases = (
+				C91EEEA225A8CE6700D8A13E /* Sources */,
+				C91EEEA325A8CE6700D8A13E /* Frameworks */,
+				C91EEEA425A8CE6700D8A13E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CustomSwiftUIWatchPager Extension";
+			productName = "CustomSwiftUIWatchPager Extension";
+			productReference = C91EEEA625A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -144,6 +310,12 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					C91EEE6425A6294800D8A13E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					C91EEE9C25A8CE6400D8A13E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					C91EEEA525A8CE6700D8A13E = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -162,6 +334,8 @@
 			projectRoot = "";
 			targets = (
 				C91EEE6425A6294800D8A13E /* CustomSwiftUIPager */,
+				C91EEE9C25A8CE6400D8A13E /* CustomSwiftUIWatchPager */,
+				C91EEEA525A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -173,6 +347,23 @@
 			files = (
 				C91EEE7025A6294B00D8A13E /* Preview Assets.xcassets in Resources */,
 				C91EEE6D25A6294B00D8A13E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91EEE9B25A8CE6400D8A13E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91EEEA025A8CE6700D8A13E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91EEEA425A8CE6700D8A13E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91EEEB925A8CE6800D8A13E /* Preview Assets.xcassets in Resources */,
+				C91EEEB625A8CE6800D8A13E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +386,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C91EEEA225A8CE6700D8A13E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91EEEB025A8CE6700D8A13E /* NotificationController.swift in Sources */,
+				C91EEEE025A8CFA900D8A13E /* WatchPagerView2.swift in Sources */,
+				C91EEECA25A8CECF00D8A13E /* PagerMainView.swift in Sources */,
+				C91EEEE525A8CFB400D8A13E /* WatchPagerView3.swift in Sources */,
+				C91EEED025A8CF1D00D8A13E /* WatchPagerView1.swift in Sources */,
+				C91EEED725A8CF4800D8A13E /* Extensions.swift in Sources */,
+				C91EEEAE25A8CE6700D8A13E /* ContentView.swift in Sources */,
+				C91EEEB425A8CE6700D8A13E /* ComplicationController.swift in Sources */,
+				C91EEEAC25A8CE6700D8A13E /* CustomSwiftUIPagerApp.swift in Sources */,
+				C91EEEDB25A8CF4B00D8A13E /* Modifiers.swift in Sources */,
+				C91EEEE925A8D0F000D8A13E /* PagerContentView.swift in Sources */,
+				C91EEEB225A8CE6700D8A13E /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C91EEEA925A8CE6700D8A13E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C91EEEA525A8CE6700D8A13E /* CustomSwiftUIWatchPager Extension */;
+			targetProxy = C91EEEA825A8CE6700D8A13E /* PBXContainerItemProxy */;
+		};
+		C91EEEBD25A8CE6800D8A13E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C91EEE9C25A8CE6400D8A13E /* CustomSwiftUIWatchPager */;
+			targetProxy = C91EEEBC25A8CE6800D8A13E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C91EEE7225A6294B00D8A13E /* Debug */ = {
@@ -358,6 +581,94 @@
 			};
 			name = Release;
 		};
+		C91EEEC025A8CE6800D8A13E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomSwiftUIWatchPager Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7U8H9SK8NB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CustomSwiftUIWatchPager Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.CustomSwiftUIPager.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		C91EEEC125A8CE6800D8A13E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CustomSwiftUIWatchPager Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7U8H9SK8NB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CustomSwiftUIWatchPager Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.CustomSwiftUIPager.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		C91EEEC425A8CE6800D8A13E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7U8H9SK8NB;
+				IBSC_MODULE = CustomSwiftUIWatchPager_Extension;
+				INFOPLIST_FILE = CustomSwiftUIWatchPager/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.CustomSwiftUIPager.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		C91EEEC525A8CE6800D8A13E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7U8H9SK8NB;
+				IBSC_MODULE = CustomSwiftUIWatchPager_Extension;
+				INFOPLIST_FILE = CustomSwiftUIWatchPager/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.CustomSwiftUIPager.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +686,24 @@
 			buildConfigurations = (
 				C91EEE7525A6294B00D8A13E /* Debug */,
 				C91EEE7625A6294B00D8A13E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91EEEBF25A8CE6800D8A13E /* Build configuration list for PBXNativeTarget "CustomSwiftUIWatchPager Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91EEEC025A8CE6800D8A13E /* Debug */,
+				C91EEEC125A8CE6800D8A13E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91EEEC325A8CE6800D8A13E /* Build configuration list for PBXNativeTarget "CustomSwiftUIWatchPager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91EEEC425A8CE6800D8A13E /* Debug */,
+				C91EEEC525A8CE6800D8A13E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
