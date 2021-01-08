@@ -32,11 +32,19 @@ struct ContentView: View {
     //=======================================
     private func addViewsToPager() -> [AnyView] {
         
-        let view1 = PagerView1(size: size).eraseToAnyView()
-        let view2 = PagerView2(size: size).eraseToAnyView()
-        let view3 = PagerView3(size: size).eraseToAnyView()
+        let view1 = PagerView1()
+            .modifier(ViewToPagerView(size: size))
+            .eraseToAnyView()
+
+        let view2 = PagerView2()
+            .modifier(ViewToPagerView(size: size))
+            .eraseToAnyView()
         
-        let pageArray = [view1, view2, view3]
+        let view3 = PagerView3()
+            .modifier(ViewToPagerView(size: size))
+            .eraseToAnyView()
+        
+        let pageArray = [view1, view2, view3] 
         
         return pageArray
     }
@@ -49,15 +57,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-
-//=======================================
-// MARK: Extensions
-//=======================================
-extension View {
-    func eraseToAnyView() -> AnyView {
-        AnyView(self)
     }
 }
