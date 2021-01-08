@@ -9,7 +9,7 @@ struct ContentView: View {
     // # Public/Internal/Open
     
     // # Private/Fileprivate
-    private let size: CGSize = CGSize(width: 320, height: 400)
+    private let size: CGSize = CGSize(width: UIScreen.main.bounds.width - 40, height: 400)
     
     // # Body
     var body: some View {
@@ -17,6 +17,7 @@ struct ContentView: View {
         ZStack {
             
             Color.gray
+                .opacity(0.4)
                 .ignoresSafeArea(edges: .all)
             
             PagerMainView(size: size, cornerRadius: 20, pagerContent: addViewsToPager())

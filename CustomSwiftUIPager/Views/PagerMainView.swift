@@ -27,7 +27,6 @@ struct PagerMainView: View {
         ZStack {
             
             Color.white
-                .cornerRadius(cornerRadius)
             
             PagerContentView(pageCount: pagerContent.count, size: size, currentIndex: $currentPage) {
                 ForEach(0..<pagerContent.count) { idx in
@@ -52,6 +51,7 @@ struct PagerMainView: View {
             }
         }
         .frame(width: size.width, height: size.height, alignment: .center)
+        .cornerRadius(cornerRadius)
         .clipped()
     }
     
