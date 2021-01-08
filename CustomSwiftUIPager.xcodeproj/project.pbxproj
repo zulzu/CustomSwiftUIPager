@@ -11,7 +11,7 @@
 		C91EEE6B25A6294900D8A13E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE6A25A6294900D8A13E /* ContentView.swift */; };
 		C91EEE6D25A6294B00D8A13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91EEE6C25A6294B00D8A13E /* Assets.xcassets */; };
 		C91EEE7025A6294B00D8A13E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91EEE6F25A6294B00D8A13E /* Preview Assets.xcassets */; };
-		C91EEE7A25A629F900D8A13E /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE7925A629F900D8A13E /* PagerView.swift */; };
+		C91EEE7A25A629F900D8A13E /* PagerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE7925A629F900D8A13E /* PagerContentView.swift */; };
 		C91EEE7F25A62A4600D8A13E /* PagerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE7E25A62A4600D8A13E /* PagerMainView.swift */; };
 		C91EEE8325A62A5A00D8A13E /* PagerView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE8225A62A5A00D8A13E /* PagerView1.swift */; };
 		C91EEE8625A62A6D00D8A13E /* PagerView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEE8525A62A6D00D8A13E /* PagerView2.swift */; };
@@ -25,7 +25,7 @@
 		C91EEE6C25A6294B00D8A13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91EEE6F25A6294B00D8A13E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C91EEE7125A6294B00D8A13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C91EEE7925A629F900D8A13E /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+		C91EEE7925A629F900D8A13E /* PagerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerContentView.swift; sourceTree = "<group>"; };
 		C91EEE7E25A62A4600D8A13E /* PagerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerMainView.swift; sourceTree = "<group>"; };
 		C91EEE8225A62A5A00D8A13E /* PagerView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView1.swift; sourceTree = "<group>"; };
 		C91EEE8525A62A6D00D8A13E /* PagerView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView2.swift; sourceTree = "<group>"; };
@@ -84,7 +84,8 @@
 		C91EEE7825A629E700D8A13E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C91EEE7925A629F900D8A13E /* PagerView.swift */,
+				C91EEE7E25A62A4600D8A13E /* PagerMainView.swift */,
+				C91EEE7925A629F900D8A13E /* PagerContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,7 +93,6 @@
 		C91EEE7D25A62A2E00D8A13E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				C91EEE7E25A62A4600D8A13E /* PagerMainView.swift */,
 				C91EEE8225A62A5A00D8A13E /* PagerView1.swift */,
 				C91EEE8525A62A6D00D8A13E /* PagerView2.swift */,
 				C91EEE8825A62A7E00D8A13E /* PagerView3.swift */,
@@ -173,7 +173,7 @@
 				C91EEE7F25A62A4600D8A13E /* PagerMainView.swift in Sources */,
 				C91EEE8925A62A7E00D8A13E /* PagerView3.swift in Sources */,
 				C91EEE8325A62A5A00D8A13E /* PagerView1.swift in Sources */,
-				C91EEE7A25A629F900D8A13E /* PagerView.swift in Sources */,
+				C91EEE7A25A629F900D8A13E /* PagerContentView.swift in Sources */,
 				C91EEE6925A6294900D8A13E /* CustomSwiftUIPagerApp.swift in Sources */,
 				C91EEE8625A62A6D00D8A13E /* PagerView2.swift in Sources */,
 			);

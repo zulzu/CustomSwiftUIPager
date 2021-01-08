@@ -11,6 +11,7 @@ struct PagerMainView: View {
     let size: CGSize
     // The corner radius of the view
     let cornerRadius: CGFloat
+    let pagerContent: Array<AnyView>
     
     // # Private/Fileprivate
     // The number of the pages
@@ -28,11 +29,10 @@ struct PagerMainView: View {
             Color.white
                 .cornerRadius(cornerRadius)
             
-            //TODO: Probaby the pagerView shouldn't know anything about the content - use an Array<AnyView> maybe and should get the count from that too?
-            PagerView(pageCount: pageCount, size: size, currentIndex: self.$currentPage) {
-                PagerView1(size: size)
-                PagerView2(size: size)
-                PagerView3(size: size)
+            PagerContentView(pageCount: pagerContent.count, size: size, currentIndex: $currentPage) {
+                ForEach(0..<pagerContent.count) { idx in
+                    pagerContent[idx]
+                }
             }
             
             VStack {
@@ -62,8 +62,9 @@ struct PagerMainView: View {
     /// - Parameters:
     ///   - size: The width and the height of the pager view
     ///   - cornerRadius: The corner radius of the view
-    public init(size: CGSize, cornerRadius: CGFloat) {
+    public init(size: CGSize, cornerRadius: CGFloat, pagerContent: Array<AnyView>) {
         self.size = size
         self.cornerRadius = cornerRadius
+        self.pagerContent = pagerContent
     }
 }
